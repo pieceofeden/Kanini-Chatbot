@@ -1,0 +1,80 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - business
+  - job_prospect
+ # - inform_location
+  - location_india
+  - location_us
+  - location_ukraine
+  - main_menu
+  - bot_challenge
+
+#entities:
+#  - location
+
+#slots:
+#  location:
+#    type: text
+#    influence_conversation: true
+#    mappings:
+#    - type: from_enitity
+#      entity: location
+
+responses:
+  utter_greet:
+  - text: "Hey! How can I help you today?"
+    buttons:
+      - title: "Need help with your business?"
+        payload: "/business"
+      - title: "Looking for job opportunities?"
+        payload: "/job_prospect"
+
+  utter_business:
+  - text: "These are the services we offer"
+
+  utter_job:
+  - text: "Which location are you conisdering for work?"
+    buttons:
+    - title: "India"
+      payload: "/location_india"
+    - title: "USA"
+      payload: "/location_us"
+    - title: "Ukraine"
+      payload: "/location_ukraine"
+    
+     #- title: "India"
+     #  payload: '/inform_location{{"location":"India"}}'
+     #- title: "USA"
+     #  payload: '/inform_location{{"location":"USA"}}'
+     #- title: "Ukraine"
+     #  paylaod: '/inform_location{{"location":"Ukraine"}}'
+  
+  utter_location_link_india:
+  - text: "These are the [India openings](https://kanini.com/open-positions/#india-openings/)."
+
+  utter_location_link_us:
+  - text: "These are the [US openings](https://kanini.com/open-positions/#us-openings)."
+
+  utter_location_link_ukraine:
+  - text: "These are the [Ukraine openings](https://kanini.com/open-positions/#ukraine-openings)."
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  #utter_cheer_up:
+  #- text: "Maybe I can help you with that"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

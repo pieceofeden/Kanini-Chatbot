@@ -1,0 +1,135 @@
+version: "3.1"
+
+nlu:
+- intent: main_menu
+  examples: |
+    - take me to the main menu
+    - main menu
+    - first menu
+    - go back to main menu
+    - back to main menu
+
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: business
+  examples: |
+    - I want help with my business
+    - I want to automate
+    - automation
+    
+- intent: job_prospect
+  examples: |
+    - work
+    - open positions
+
+- intent: location_india
+  examples: |
+    - openings in india
+    - positions in india
+    - jobs in india
+
+- intent: location_us
+  examples: |
+    - openings in usa
+    - positions in usa
+    - jobs in usa
+
+- intent: location_ukraine
+  examples: |
+    - openings in ukraine
+    - positions in ukraine
+    - jobs in ukraine
+
+#- intent: inform_location
+#  examples: |
+#    - opening in [India](location)
+#    - opening in [US](location)
+#    - opening in [Ukraine](location)
+
+
+#- intent: mood_great
+#  examples: |
+#    - perfect
+#   - great
+#    - amazing
+#    - feeling like a king
+#    - wonderful
+#    - I am feeling very good
+#    - I am great
+#    - I am amazing
+#    - I am going to save the world
+#    - super stoked
+#    - extremely good
+#    - so so perfect
+#    - so good
+#    - so perfect
+
+#- intent: mood_unhappy
+#  examples: |
+#    - my day was horrible
+#    - I am sad
+#    - I don't feel very well
+#    - I am disappointed
+#    - super sad
+#    - I'm so sad
+#    - sad
+#    - very sad
+#    - unhappy
+#    - not good
+#    - not very good
+#    - extremly sad
+#    - so saad
+#    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?

@@ -1,0 +1,33 @@
+version: "3.1"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Takes back to the main menu
+  steps:
+  - intent: main_menu 
+  - action: utter_greet
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: user chooses India as the location
+  steps:
+    - intent: location_india
+    - action: utter_location_link_india
+  
+- rule: user chooses US as the location
+  steps:
+    - intent: location_us
+    - action: utter_location_link_us
+
+- rule: user chooses ukraine as the location
+  steps:
+    - intent: location_ukraine
+    - action: utter_location_link_ukraine

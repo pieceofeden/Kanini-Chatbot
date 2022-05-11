@@ -1,0 +1,46 @@
+version: "3.1"
+
+stories:
+
+- story: user is a potential client
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: business
+    - action: utter_business
+
+- story: user is a potential employee
+  steps: 
+    - intent: greet
+    - action: utter_greet
+    - intent: job_prospect
+    - action: utter_job
+
+#- story: happy path client
+#  steps:
+#  - intent: greet
+# - action: utter_greet
+#  - intent: mood_great
+#  - action: utter_business
+#  - intent: affirm
+  
+
+#- story: sad path client
+#  steps:
+#  - intent: greet
+#  - action: utter_greet
+#  - intent: mood_unhappy
+#  - action: utter_cheer_up
+#  - action: utter_business
+#  - intent: affirm
+  
+
+#- story: happy path job
+#  steps:
+#  - intent: greet
+#  - action: utter_greet
+#  - intent: mood_great
+#  - action: utter_business
+#  - intent: deny
+#  - action: utter_job
+#  - intent: affirm

@@ -1,0 +1,17 @@
+{
+  "lookup": {
+    "eJyLrq6NBQAEOAGx": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taS2NhYA6dwbhQ==": "utter_greet",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taSWgBmlJSWpRfEQpbhMiAUAQvc0lw==": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taSWgBmlJSWpRfEQpeSZQMAVWflJ8QVF+cUFqclAo2IB3rdRXg==": "utter_job",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taSWgBmlJSWpRfEQpeSZQMAVWflJ8QVF+cUFqclEOgaog5AxsQAxkWyH": "action_listen",
+    "eJyljkEKwyAQRa8yB8gJvEoIYuUTTJNRxrEb8e6V2r2h3c2HN4+31rZQTYKXdV5DZEN1HJbdBUPfcYas4M6WDOlM4D7V0C6AtomjqELsQH8zTCqO+LBJYk7wN2P6x3+aSdEZvfsA5SkuMFrb3lpnius=": "utter_location_link_ukraine",
+    "eJyljkEKwyAQRa/iAXoCrxKKWPmUacwo49iN5O6VpmSrNLsZeP/xlrbfTMuCt/NBKbE17Tgc+w3W/J5IRcGdrQXSGeL+qjVPAXQfOKoqxB3of4ZBxSs9XJZUMsJkTF9c0wyKYgr+C9RVPDHmqs5VJF7P6YT8/gFmBK8q": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taSWgBmlJSWpRfEQpeSZQMAVSaXFmXmpxcW1tbEAnJRPwA==": "utter_business",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taSWgBmlJSWpRfEQpeSZQMAVSaXFmXmpxcXEOQSuGo85sQDxsmt8": "action_listen",
+    "eJyljlEKgCAQBa+yB+gEXiViMVnCMJV17Ue8e5L9G/W3D2aHmUudoESmE7URG7yC0g/0+iAFz3A2CfnG5kTcGOvbFAUbE0kdOLIIMXb0m2FQsYcVI4cUybyMaR//NIMiF4y+gZxqXS6oWojk": "utter_location_link_us",
+    "eJyljk0KgCAQRq/iATqBV4kQkyEsG2Uc20h3z35omVG7GXjf47V5bUQOBIvShq1HKfJ5KNQzSHE9zkYGLGyKQIWxWF6WYiAAXiuOxAykTvSboVIx+l4F8jGAeRlTFv80lSLnjT6AFN8F3QNncdpXz8puA0L4qRU=": "action_listen",
+    "eJyljlEKgCAQBa/iATqBV4kQsyU2apV17Ue8e5L9G/W3D2aHGXMZVA4Mp7FO0JNWuR2G7AFaPWPHKECVTRG4Mkh1ilYrA0jpOJIIsGnoN0OnYvOzCexjAPcypn7803SKdu/sDSAtaEuZLkSFigE=": "utter_location_link_india",
+    "eJyljtEJgDAMBVfpAE7QVURKrUGiNS1p9Ke4u0XF34r+JXDvuDbvjcqRYTPWCQbSKl+HIbuAVvfjMQlQYdcEXBik8opWIwPIXnGsIsDmQr8ZKhVT6E3kkCK4lzFl8U9TKfLB2RNAGtC+a3o2Hmm+h1VxdwA+maxs": "action_listen"
+  }
+}

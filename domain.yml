@@ -6,65 +6,83 @@ intents:
   - affirm
   - deny
   - business
-  - job_prospect
- # - inform_location
-  - location_india
-  - location_us
-  - location_ukraine
+  - job_openings
+  - inform_location:
+      use_entities:
+        - location
   - main_menu
+  - contact_us
   - bot_challenge
 
-#entities:
-#  - location
+entities:
+  - location
 
-#slots:
-#  location:
-#    type: text
-#    influence_conversation: true
-#    mappings:
-#    - type: from_enitity
-#      entity: location
+slots:
+  location:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: location
+  #location_link:
+  #  type: text
+  #  influence_conversation: false
+  #  mappings:
+  #  - type: # from_trigger_intent or custom
+
+  #    intent: inform_location   # If inform_location intent is predicted then only this slot will be filled.
 
 responses:
   utter_greet:
+  - text: "Hello, How can I assist you today?"
+    buttons:
+      - title: "Need help with your business?"
+        payload: "/business"
+      - title: "Looking for job opportunities?"
+        payload: "/job_openings"
+  - text: "Hi, Is there something I can do for you today?"
+    buttons:
+      - title: "Need help with your business?"
+        payload: "/business"
+      - title: "Looking for job opportunities?"
+        payload: "/job_openings"
   - text: "Hey! How can I help you today?"
     buttons:
       - title: "Need help with your business?"
         payload: "/business"
       - title: "Looking for job opportunities?"
-        payload: "/job_prospect"
+        payload: "/job_openings"
 
   utter_business:
-  - text: "These are the services we offer"
+  - text: "Reach out to us [here](https://kanini.com/contact-us/)"
 
   utter_job:
   - text: "Which location are you conisdering for work?"
     buttons:
-    - title: "India"
-      payload: "/location_india"
-    - title: "USA"
-      payload: "/location_us"
-    - title: "Ukraine"
-      payload: "/location_ukraine"
-    
-     #- title: "India"
-     #  payload: '/inform_location{{"location":"India"}}'
-     #- title: "USA"
-     #  payload: '/inform_location{{"location":"USA"}}'
-     #- title: "Ukraine"
-     #  paylaod: '/inform_location{{"location":"Ukraine"}}'
+     - title: "India"
+       payload: '/inform_location{{"location":"India"}}'
+     - title: "USA"
+       payload: '/inform_location{{"location":"USA"}}'
+     - title: "Ukraine"
+       payload: '/inform_location{{"location":"Ukraine"}}'
+
+  utter_location:
+  - text: "Your chosen location is {location}"
   
-  utter_location_link_india:
-  - text: "These are the [India openings](https://kanini.com/open-positions/#india-openings/)."
+  #utter_location_link_india:
+  #- text: "These are the [India openings](https://kanini.com/open-positions/#india-openings/)."
 
-  utter_location_link_us:
-  - text: "These are the [US openings](https://kanini.com/open-positions/#us-openings)."
+  #utter_location_link_us:
+  #- text: "These are the [US openings](https://kanini.com/open-positions/#us-openings)."
 
-  utter_location_link_ukraine:
-  - text: "These are the [Ukraine openings](https://kanini.com/open-positions/#ukraine-openings)."
+  #utter_location_link_ukraine:
+  #- text: "These are the [Ukraine openings](https://kanini.com/open-positions/#ukraine-openings)."
 
   utter_did_that_help:
   - text: "Did that help you?"
+
+  utter_glad:
+  - text: "So glad that I could help you out! :)"
 
   utter_goodbye:
   - text: "Bye"

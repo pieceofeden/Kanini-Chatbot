@@ -9,12 +9,18 @@ stories:
     - intent: business
     - action: utter_business
 
-- story: user is a potential employee
+- story: user is a potential employee 
   steps: 
     - intent: greet
     - action: utter_greet
-    - intent: job_prospect
+    - intent: job_openings
     - action: utter_job
+    - intent: inform_location
+      entities:
+      - location: "India"
+    - slot_was_set:
+      - location: "India"
+    - action: utter_location
 
 #- story: happy path client
 #  steps:

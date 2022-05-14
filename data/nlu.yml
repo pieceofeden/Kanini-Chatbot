@@ -9,6 +9,15 @@ nlu:
     - go back to main menu
     - back to main menu
 
+- intent: contact_us
+  examples: |
+    - how can I reach you
+    - can I contact you
+    - how to reach you
+    - how to get in touch with you
+    - get in touch with kanini
+    - get in touch
+
 - intent: greet
   examples: |
     - hey
@@ -63,34 +72,53 @@ nlu:
     - I want to automate
     - automation
     
-- intent: job_prospect
+- intent: job_openings
   examples: |
     - work
     - open positions
+    - openings
+    - work opportunities
+    - career 
 
-- intent: location_india
+- intent: inform_location
   examples: |
-    - openings in india
-    - positions in india
-    - jobs in india
+    - openings in [India]{"entity":"location", "value":"India"}
+    - openings in [US]{"entity":"location", "value":"US"}
+    - openings in [Ukraine]{"entity":"location", "value":"Ukraine"}
+    - positions in [India]{"entity":"location", "value":"India"}
+    - positions in [US]{"entity":"location", "value":"US"}
+    - positions in [Ukraine]]{"entity":"location", "value":"Ukraine"}
+    - jobs in [India]{"entity":"location", "value":"India"}
+    - jobs in [US]{"entity":"location", "value":"US"}
+    - jobs in [Ukraine]{"entity":"location", "value":"Ukraine"}
 
-- intent: location_us
+
+#----------------------------------Synonyms--------------------------------------
+# Can further optimize this by using proper pipeline to handle case sensitivity
+# References:-
+# https://github.com/RasaHQ/rasa/issues/5750
+# https://forum.rasa.com/t/case-sensitivity/2541
+
+- synonym: India
   examples: |
-    - openings in usa
-    - positions in usa
-    - jobs in usa
+    - india
+    - INDIA
 
-- intent: location_ukraine
+- synonym: US
   examples: |
-    - openings in ukraine
-    - positions in ukraine
-    - jobs in ukraine
+    - USA
+    - america
+    - united states 
+    - usa
+    - America
+    - states
+    - us
+    - United States of America
+    - AMERICA
 
-#- intent: inform_location
-#  examples: |
-#    - opening in [India](location)
-#    - opening in [US](location)
-#    - opening in [Ukraine](location)
+- synonym: Ukraine
+  examples: |
+    - ukraine
 
 
 #- intent: mood_great

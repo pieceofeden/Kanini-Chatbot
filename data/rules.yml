@@ -17,17 +17,7 @@ rules:
   - intent: bot_challenge
   - action: utter_iamabot
 
-- rule: user chooses India as the location
+- rule: contact us page
   steps:
-    - intent: location_india
-    - action: utter_location_link_india
-  
-- rule: user chooses US as the location
-  steps:
-    - intent: location_us
-    - action: utter_location_link_us
-
-- rule: user chooses ukraine as the location
-  steps:
-    - intent: location_ukraine
-    - action: utter_location_link_ukraine
+    - intent: contact_us
+    - action: utter_business

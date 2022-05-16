@@ -9,6 +9,15 @@ nlu:
     - go back to main menu
     - back to main menu
 
+- intent: contact_us
+  examples: |
+    - how can I reach you
+    - can I contact you
+    - how to reach you
+    - how to get in touch with you
+    - get in touch with kanini
+    - get in touch
+
 - intent: greet
   examples: |
     - hey

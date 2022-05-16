@@ -31,3 +31,8 @@ rules:
   steps:
     - intent: location_ukraine
     - action: utter_location_link_ukraine
+
+- rule: contact us page
+  steps:
+    - intent: contact_us
+    - action: utter_business

@@ -12,6 +12,7 @@ intents:
   - location_us
   - location_ukraine
   - main_menu
+  - contact_us
   - bot_challenge
 
 #entities:
@@ -35,7 +36,7 @@ responses:
         payload: "/job_prospect"
 
   utter_business:
-  - text: "These are the services we offer"
+  - text: "Reach out to us [here](https://kanini.com/contact-us/)"
 
   utter_job:
   - text: "Which location are you conisdering for work?"
@@ -65,6 +66,9 @@ responses:
 
   utter_did_that_help:
   - text: "Did that help you?"
+
+  utter_glad:
+  - text: "So glad that I could help you out! :)"
 
   utter_goodbye:
   - text: "Bye"

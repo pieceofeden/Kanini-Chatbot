@@ -20,7 +20,7 @@ stories:
       - location: "India"
     - slot_was_set:
       - location: "India"
-    - action: utter_location
+    - action: action_location_link
 
 #- story: happy path client
 #  steps:

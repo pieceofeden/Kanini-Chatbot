@@ -24,13 +24,9 @@ slots:
     mappings:
     - type: from_entity
       entity: location
-  #location_link:
-  #  type: text
-  #  influence_conversation: false
-  #  mappings:
-  #  - type: # from_trigger_intent or custom
-
-  #    intent: inform_location   # If inform_location intent is predicted then only this slot will be filled.
+      
+actions:
+  - action_location_link
 
 responses:
   utter_greet:
@@ -66,8 +62,8 @@ responses:
      - title: "Ukraine"
        payload: '/inform_location{{"location":"Ukraine"}}'
 
-  utter_location:
-  - text: "Your chosen location is {location}"
+  #utter_location:
+  #- text: "Your chosen location is {location_link}"
   
   #utter_location_link_india:
   #- text: "These are the [India openings](https://kanini.com/open-positions/#india-openings/)."
@@ -89,9 +85,6 @@ responses:
 
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
-
-  #utter_cheer_up:
-  #- text: "Maybe I can help you with that"
 
 session_config:
   session_expiration_time: 60

@@ -17,7 +17,8 @@ rules:
   - intent: bot_challenge
   - action: utter_iamabot
 
+
 - rule: contact us page
   steps:
     - intent: contact_us
-    - action: utter_business
+    - action: utter_contact_us

@@ -69,8 +69,33 @@ nlu:
 - intent: business
   examples: |
     - I want help with my business
-    - I want to automate
-    - automation
+    - need help with business
+
+- intent: inform_business
+  examples: |
+    - I want help with [product engineering]{"entity":"service", "value":"product_eng"}
+    - need help with [product engineering]{"entity":"service", "value":"product_eng"}
+    - help with [product engineering]{"entity":"service", "value":"product_eng"}
+    - [product engineering]{"entity":"service", "value":"product_eng"}
+    - [product eng]{"entity":"service", "value":"product_eng"}
+    - I want help with [servicenow]{"entity":"service", "value":"servicenow"}
+    - need help with [servicenow]{"entity":"service", "value":"servicenow"}
+    - help with [servicenow]{"entity":"service", "value":"servicenow"}
+    - [servicenow] implementation{"entity":"service", "value":"servicenow"}
+    - [servicenow]{"entity":"service", "value":"servicenow"}
+    - need help with [data analytics and AI]{"entity":"service", "value":"ai"}
+    - [data analytics]{"entity":"service", "value":"ai"}
+    - [data analytics and AI]{"entity":"service", "value":"ai"}
+    - [AI]{"entity":"service", "value":"ai"}
+    - help with [ai]{"entity":"service", "value":"ai"}
+    - [ai]{"entity":"service", "value":"ai"}
+    - need help with [cloud]{"entity":"service", "value":"cloud"}
+    - [cloud]{"entity":"service", "value":"cloud"}
+    - enabling [cloud]{"entity":"service", "value":"cloud"}
+    - need help with [automation]{"entity":"service", "value":"automation"}
+    - [automation]{"entity":"service", "value":"automation"}
+    - [automating]{"entity":"service", "value":"automation"}
+    - [automate]{"entity":"service", "value":"automation"}
     
 - intent: job_openings
   examples: |

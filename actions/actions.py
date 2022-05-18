@@ -26,3 +26,28 @@ class Actionlocationlink(Action):
         dispatcher.utter_message(text=msg)
 
         return []
+
+class ActionService(Action):
+    
+    def name(self) -> Text:
+        return "action_service"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text,Any]) -> List[Dict[Text, Any]]:
+        serv = next(tracker.get_latest_entity_values("service"), None)
+
+        if serv=="product_eng":
+            msg = f"https://kanini.com/product-engineering/"
+        elif serv=="servicenow":
+            msg = f"https://kanini.com/servicenow/"
+        elif serv=="ai":
+            msg = f"https://kanini.com/data-analytics/"
+        elif serv=="cloud":
+            msg = f"https://kanini.com/cloud-enablement/"
+        elif serv=="automation":
+            msg = f"https://kanini.com/intelligent-automation/"
+
+        dispatcher.utter_message(text=msg)
+
+        return []

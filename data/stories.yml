@@ -8,6 +8,12 @@ stories:
     - action: utter_greet
     - intent: business
     - action: utter_business
+    - intent: inform_business
+      entities:
+        - service: "product_eng"
+    - slot_was_set:
+      - service: "product_eng"
+    - action: action_service
 
 - story: user is a potential employee 
   steps: 

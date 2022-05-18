@@ -6,6 +6,9 @@ intents:
   - affirm
   - deny
   - business
+  - inform_business:
+      use_entities:
+        - service
   - job_openings
   - inform_location:
       use_entities:
@@ -16,6 +19,7 @@ intents:
 
 entities:
   - location
+  - service
 
 slots:
   location:
@@ -24,9 +28,16 @@ slots:
     mappings:
     - type: from_entity
       entity: location
-      
+  service:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: service
+
 actions:
   - action_location_link
+  - action_service
 
 responses:
   utter_greet:
@@ -50,6 +61,22 @@ responses:
         payload: "/job_openings"
 
   utter_business:
+  - text: "What do you need help with"
+    buttons:
+      - title: "Product Engineering"
+        payload: '/inform_business{{"service":"product_eng"}}'
+      - title: "ServiceNow Solutions"
+        payload: '/inform_business{{"service":"servicenow"}}'
+      - title: "Data Analytics and AI"
+        payload: '/inform_business{{"service":"AI"}}'
+      - title: "Cloud Enablement"
+        payload: '/inform_business{{"service":"cloud"}}'
+      - title: "Intelligent Automation"
+        payload: '/inform_business{{"service":"automation"}}'
+      - title: "Anything else?"
+        payload: "/contact_us"
+
+  utter_contact_us:
   - text: "Reach out to us [here](https://kanini.com/contact-us/)"
 
   utter_job:
@@ -61,18 +88,6 @@ responses:
        payload: '/inform_location{{"location":"USA"}}'
      - title: "Ukraine"
        payload: '/inform_location{{"location":"Ukraine"}}'
-
-  #utter_location:
-  #- text: "Your chosen location is {location_link}"
-  
-  #utter_location_link_india:
-  #- text: "These are the [India openings](https://kanini.com/open-positions/#india-openings/)."
-
-  #utter_location_link_us:
-  #- text: "These are the [US openings](https://kanini.com/open-positions/#us-openings)."
-
-  #utter_location_link_ukraine:
-  #- text: "These are the [Ukraine openings](https://kanini.com/open-positions/#ukraine-openings)."
 
   utter_did_that_help:
   - text: "Did that help you?"
